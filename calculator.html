@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator UI</title>
+  <style>
+    body {
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .calculator {
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 260px;
+    }
+
+    .display {
+      background: #222;
+      color: #0f0;
+      font-size: 2em;
+      text-align: right;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      height: 50px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      padding: 20px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 10px;
+      background: #e0e0e0;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #d0d0d0;
+    }
+
+    .operator {
+      background: #f9a825;
+      color: #fff;
+    }
+
+    .operator:hover {
+      background: #f57f17;
+    }
+
+    .equal {
+      grid-column: span 2;
+      background: #388e3c;
+      color: #fff;
+    }
+
+    .equal:hover {
+      background: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">0</div>
+    <div class="buttons">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">/</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">*</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">-</button>
+      <button>0</button>
+      <button>.</button>
+      <button class="equal">=</button>
+      <button class="operator">+</button>
+    </div>
+  </div>
+</body>
+</html>
