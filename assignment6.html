@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frog Layout</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+        }
+        .green-bar {
+            background-color: #5A6E3B; /* green */
+            height: 50px;
+        }
+        .blue-bar {
+            background-color: #2D3E5E; /* blue */
+            height: 40px;
+        }
+        .frog-image {
+            text-align: center;
+            padding: 10px;
+        }
+        .frog-image img {
+            width: 500px;
+            height: auto;
+        }
+        .top-section td {
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr class="top-section">
+        <td style="width: 33%;"></td>
+        <td style="width: 34%;">
+            <table style="width: 100%;">
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+            </table>
+        </td>
+        <td style="width: 33%;"></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td class="green-bar" colspan="3"></td>
+    </tr>
+    <tr>
+        <td style="width: 20%;"></td>
+        <td class="frog-image" style="width: 60%;">
+            <img src="https://imgs.search.brave.com/vxcPd2xWbH6kiJkuXlqkSxk_92Sh1mo3xte9soe_ofc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzgwLzI4LzU4/LzM2MF9GXzE4MDI4/NTgwNF9hMDUwYUFI/cVdLUEtibnhpUTYx/azFkN3padWlSa3pT/QS5qcGc" alt=" Frog">
+        </td>
+        <td style="width: 20%;"></td>
+    </tr>
+    <tr>
+        <td class="blue-bar" colspan="3"></td>
+    </tr>
+</table>
+
+</body>
+</html>
